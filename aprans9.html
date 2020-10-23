@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تثقف</title>
-    <script>
-        function myplay(){
-        var bleep = new Audio('bleep.wav');
-        bleep.play();
-        }
 
-        function delay (URL) {
-            setTimeout( function()
-            { window.location = URL }, 2000 );
-        }
-    </script>
 
 </head>
 <body> 
@@ -35,12 +25,34 @@
    </div>
    <nav>
    <div>
-   <div class="a1"><a href="finalproject.html" onclick="myplay()">صغير الارنب</a></div>
-   <div class="a2"><a href="end.html" onclick="myplay()">صغير الدب</a></div>
-   <div class="a3"><a href="finalproject.html" onclick="myplay()">انثى السمك</a></div>
-   <div class="a4"><a href="finalproject.html" onclick="myplay()">انثى النمر</a></div>
+   <div class="a1"><button onclick="myplay2()">صغير الارنب</button></div>
+   <div class="a2"><button onclick="myplay()">صغير الدب</button></div>
+   <div class="a3"><button onclick="myplay2()">انثى السمك</button></div>
+   <div class="a4"><button onclick="myplay2()">انثى النمر</button></div>
 </nav>
 </div>
+<SCript>
+    function myplay() {
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="end.html";
+        }, 1000)
+    }
+        function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+    function myplay2() {
+        var bleep = new Audio('bleep2.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="index.html";
+        }, 1000)
+    }
+    function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+</script>
 </body>
 <style>
     body {
@@ -171,7 +183,13 @@ font-size: 30px;
         
         
     }
-
+    button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        text-decoration: underline;
+        outline: none;
+    }
 
 </style>
 

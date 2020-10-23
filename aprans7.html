@@ -35,11 +35,33 @@
    </div>
    <nav>
    <div>
-   <div class="a1"><a href="finalproject.html" onclick="myplay()">البطريق</a></div>
-   <div class="a2"><a href="aprans8.html" onclick="myplay()">الدلفين</a></div>
-   <div class="a3"><a href="finalproject.html" onclick="myplay()">القرد</a></div>
-   <div class="a4"><a href="finalproject.html" onclick="myplay()">الجمل</a></div>
+   <div class="a1"><button onclick="myplay2()">البطريق</button></div>
+   <div class="a2"><button onclick="myplay()">الدلفين</button></div>
+   <div class="a3"><button onclick="myplay2()">القرد</button></div>
+   <div class="a4"><button onclick="myplay2()">الجمل</button></div>
 </nav>
+<SCript>
+    function myplay() {
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="aprans8.html";
+        }, 1000)
+    }
+        function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+    function myplay2() {
+        var bleep = new Audio('bleep2.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="index.html";
+        }, 1000)
+    }
+    function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+</script>
 </div>
 </body>
 <style>
@@ -171,7 +193,13 @@ font-size: 30px;
         
         
     }
-
+    button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        text-decoration: underline;
+        outline: none;
+    }
 
 </style>
 

@@ -23,7 +23,7 @@
     
    <nav class ="menu">
 <ul>
-    <li><a href="finalproject.html">استسلام</a></li>
+    <li><a href="index.html">استسلام</a></li>
 
 </ul>
 <div class="boss"></div>
@@ -35,12 +35,34 @@
    </div>
    <nav>
    <div>
-   <div class="a1"><a href="finalproject.html" onclick="myplay()">سمك التونة</a></div>
-   <div class="a2"><a href="aprans2.html" onclick="myplay()">السمك الشراعي</a></div>
-   <div class="a3"><a href="finalproject.html" onclick="myplay()">فرس النهر</a></div>
-   <div class="a4"><a href="finalproject.html" onclick="myplay()">الدلفين</a></div>
+   <div class="a1"><button onclick="myplay2()">سمك التونة</button></div>
+   <div class="a2"><button onclick="myplay()">السمك الشراعي</button></div>
+   <div class="a3"><button onclick="myplay2()">فرس النهر</button></div>
+   <div class="a4"><button onclick="myplay2()">الدلفين</button></div>
 </nav>
 </div>
+<SCript>
+    function myplay() {
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="aprans2.html";
+        }, 1000)
+    }
+        function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+    function myplay2() {
+        var bleep = new Audio('bleep2.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="index.html";
+        }, 1000)
+    }
+    function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+</script>
 </body>
 <style>
     body {
@@ -170,6 +192,13 @@ font-size: 30px;
         font-size: 30px;
         
         
+    }
+    button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        text-decoration: underline;
+        outline: none;
     }
 
 

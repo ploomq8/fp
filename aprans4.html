@@ -35,12 +35,34 @@
    </div>
    <nav>
    <div>
-   <div class="a1"><a href="finalproject.html" onclick="myplay()">24</a></div>
-   <div class="a2"><a href="aprans5.html" onclick="myplay()">32</a></div>
-   <div class="a3"><a href="finalproject.html" onclick="myplay()">15</a></div>
-   <div class="a4"><a href="finalproject.html" onclick="myplay()">30</a></div>
+   <div class="a1"><button onclick="myplay2()">24</button></div>
+   <div class="a2"><button onclick="myplay()">32</button></div>
+   <div class="a3"><button onclick="myplay2()">15</button></div>
+   <div class="a4"><button onclick="myplay2()">30</button></div>
 </nav>
 </div>
+<SCript>
+    function myplay() {
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="aprans5.html";
+        }, 1000)
+    }
+        function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+    function myplay2() {
+        var bleep = new Audio('bleep2.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="index.html";
+        }, 1000)
+    }
+    function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+</script>
 </body>
 <style>
     body {
@@ -171,7 +193,13 @@ font-size: 30px;
         
         
     }
-
+    button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        text-decoration: underline;
+        outline: none;
+    }
 
 </style>
 
