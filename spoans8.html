@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تثقف</title>
+    <script>
+        function myplay(){
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        }
+
+        function delay (URL) {
+            setTimeout( function()
+            { window.location = URL }, 2000 );
+        }
+    </script>
+
 </head>
 <body> 
     <link rel="stylesheet" href="finalproject.html">
@@ -11,7 +23,7 @@
     
    <nav class ="menu">
 <ul>
-    <li><a href="finalproject.html">استسلام</a></li>
+    <li><a href="index.html">استسلام</a></li>
 
 </ul>
 <div class="boss"></div>
@@ -21,10 +33,37 @@
    <div class="container">
        <h1>ماهو سبب اعتزال الظاهرة رونالدو</h1>
    </div>
-   <div class="a1"><a href="finalproject.html">كبر العمر</a></div>
-   <div class="a2"><a href="finalproject.html">رباط صليبي</a></div>
-   <div class="a3"><a href="finalproject.html">فضيحة منشطات</a></div>
-   <div class="a4"><a href="spoans9.html">إصابة في الركبة</a></div>
+   <nav>
+   <div>
+   <div class="a1"><button onclick="myplay2()">كبر العمر</button></div>
+   <div class="a2"><button onclick="myplay()">اصابة في الركبة</button></div>
+   <div class="a3"><button onclick="myplay2()">فضيحة المنشطات</button></div>
+   <div class="a4"><button onclick="myplay2()">رباط صليبي</button></div>
+</nav>
+</div>
+<SCript>
+    function myplay() {
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="spoans9.html";
+        }, 1000)
+    }
+        function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+    function myplay2() {
+        var bleep = new Audio('bleep2.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="index.html";
+        }, 1000)
+    }
+    function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+</script>
+</body>
 <style>
     body {
         background:url(https://i.pinimg.com/600x315/9c/97/3f/9c973fc03f0b6b86647f5a5669724494.jpg) no-repeat center center fixed;
@@ -53,7 +92,7 @@ font-family: sans-serif;
         text-align: center;
         position: relative;
         top: 50%;
-        color: #f9844a;
+        color: blue;
         transform: translateY(-50%);
     }
     .menu {
@@ -76,7 +115,7 @@ font-family: sans-serif;
         width: 130px;
         display: block;
         text-align: center;
-        color: #f2f2f2;
+        color: red;
         font-size: 18px;
         font-family: sans-serif;
         letter-spacing: 0.5px;
@@ -132,7 +171,7 @@ font-size: 30px;
         width: 300px;
         height: 80px;
         margin: 0px auto;
-        background: black;
+        background:blue;
         position: relative;
         left: 220px;
         bottom: 197px;
@@ -154,6 +193,14 @@ font-size: 30px;
         
         
     }
+    button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        text-decoration: underline;
+        outline: none;
+    }
+
 </style>
 
 </html>

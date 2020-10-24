@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تثقف</title>
+    <script>
+        function myplay(){
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        }
+
+        function delay (URL) {
+            setTimeout( function()
+            { window.location = URL }, 2000 );
+        }
+    </script>
+
 </head>
 <body> 
     <link rel="stylesheet" href="finalproject.html">
@@ -11,7 +23,7 @@
     
    <nav class ="menu">
 <ul>
-    <li><a href="finalproject.html">استسلام</a></li>
+    <li><a href="index.html">استسلام</a></li>
 
 </ul>
 <div class="boss"></div>
@@ -21,12 +33,37 @@
    <div class="container">
        <h1>كم عام استمرت الخلافة العثمانية</h1>
    </div>
-   <div >
-   <div class="a1"><a href="finalproject.html">200 عام</a></div>
-   <div class="a2"><a href="finalproject.html">600 عام</a></div>
-   <div class="a3"><a href="hisans6.html">400 عام</a></div>
-   <div class="a4"><a href="finalproject.html">500 عام</a></div>
+   <nav>
+   <div>
+   <div class="a1"><button onclick="myplay2()">200 عام</button></div>
+   <div class="a2"><button onclick="myplay2()">300 عام</button></div>
+   <div class="a3"><button onclick="myplay2()">400 عام</button></div>
+   <div class="a4"><button onclick="myplay()">600 عام</button></div>
+</nav>
 </div>
+<SCript>
+    function myplay() {
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="hisans6.html";
+        }, 1000)
+    }
+        function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+    function myplay2() {
+        var bleep = new Audio('bleep2.wav');
+        bleep.play();
+        setTimeout(() => {
+            window.location.href="index.html";
+        }, 1000)
+    }
+    function delay(URL) {
+        setTimeout(function (){window.location = URL}, 2000);
+    }
+</script>
+</body>
 <style>
     body {
         background:url(https://cdn.hipwallpaper.com/i/13/23/OuhCFd.jpg) no-repeat center center fixed;
@@ -55,7 +92,7 @@ font-family: sans-serif;
         text-align: center;
         position: relative;
         top: 50%;
-        color: #200f21;
+        color: blue;
         transform: translateY(-50%);
     }
     .menu {
@@ -78,14 +115,14 @@ font-family: sans-serif;
         width: 130px;
         display: block;
         text-align: center;
-        color: black;
+        color: red;
         font-size: 18px;
         font-family: sans-serif;
         letter-spacing: 0.5px;
 
     }
     .menu li a:hover {
-color: #200f21;
+color: #66462c;
 opacity: 0.5;
 font-size: 30px;
 
@@ -156,7 +193,13 @@ font-size: 30px;
         
         
     }
-
+    button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        text-decoration: underline;
+        outline: none;
+    }
 
 </style>
 

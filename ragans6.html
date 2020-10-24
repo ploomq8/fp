@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تثقف</title>
+    <script>
+        function myplay(){
+        var bleep = new Audio('bleep.wav');
+        bleep.play();
+        }
+
+        function delay (URL) {
+            setTimeout( function()
+            { window.location = URL }, 2000 );
+        }
+    </script>
+
 </head>
 <body> 
     <link rel="stylesheet" href="finalproject.html">
@@ -11,7 +23,7 @@
     
    <nav class ="menu">
 <ul>
-    <li><a href="finalproject.html">استسلام</a></li>
+    <li><a href="index.html">استسلام</a></li>
 
 </ul>
 <div class="boss"></div>
@@ -19,16 +31,17 @@
          <div class="boss"></div>
    </nav>
    <div class="container">
-       <h1>كم مدة السنة على كوكب عطارد</h1>
+       <h1>كم عدد الكواكب في النظام الشمسي</h1>
    </div>
+   <nav>
    <div>
-    <div class="a1"><a button onclick="myplay2()">60 يوم</button></div>
-    <div class="a2"><button onclick="myplay()">88 يوم</button>
-    </div>
-    <div class="a3"><button onclick="myplay2()">120 يوم</button> </div>
-    <div class="a4"><button onclick="myplay2()">80 يوم</button>
-    </div>
-    <SCript>
+   <div class="a1"><button onclick="myplay2()">5</button></div>
+   <div class="a2"><button onclick="myplay2()">6</button></div>
+   <div class="a3"><button onclick="myplay2()">7</button></div>
+   <div class="a4"><button onclick="myplay()">8</button></div>
+</nav>
+</div>
+<SCript>
     function myplay() {
         var bleep = new Audio('bleep.wav');
         bleep.play();
@@ -50,6 +63,7 @@
         setTimeout(function (){window.location = URL}, 2000);
     }
 </script>
+</body>
 <style>
     body {
         background:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2f195c2-c6a6-435c-86c5-5cba842f75af/d58641h-8823623c-1ac0-4422-8fd5-cc006d0c6e19.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYjJmMTk1YzItYzZhNi00MzVjLTg2YzUtNWNiYTg0MmY3NWFmXC9kNTg2NDFoLTg4MjM2MjNjLTFhYzAtNDQyMi04ZmQ1LWNjMDA2ZDBjNmUxOS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.jhheSLd0AycDiPqRBLlWVRCsW-u4iVgdA7Vr0u5udyo) no-repeat center center fixed;
@@ -78,7 +92,7 @@ font-family: sans-serif;
         text-align: center;
         position: relative;
         top: 50%;
-        color: #200f21;
+        color: white;
         transform: translateY(-50%);
     }
     .menu {
@@ -101,14 +115,14 @@ font-family: sans-serif;
         width: 130px;
         display: block;
         text-align: center;
-        color: #f2f2f2;
+        color: red;
         font-size: 18px;
         font-family: sans-serif;
         letter-spacing: 0.5px;
 
     }
     .menu li a:hover {
-color: #200f21;
+color: #66462c;
 opacity: 0.5;
 font-size: 30px;
 
@@ -186,7 +200,6 @@ font-size: 30px;
         text-decoration: underline;
         outline: none;
     }
-
 
 </style>
 
